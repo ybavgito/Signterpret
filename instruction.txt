@@ -1,0 +1,7 @@
+source env/bin/activate
+
+google-oauthlib-tool --scope https://www.googleapis.com/auth/assistant-sdk-prototype       --save --headless --client-secrets C:\Users\catch\Desktop\Miniproj\client_secret_1057234256199-rrh6rjhk1jd927kcjek7fc93r0fvkmf4.apps.googleusercontent.com.json
+
+googlesamples-assistant-devicetool --project-id slr-test-2b175 register-device  --device mark1 --model slr-test-2b175-slr-bkj39n --client-type SERVICE
+
+python -m textinput --textquery hello --device-id mark1  --device-model-id 'slr-test-2b175-slr-bkj39n'
